@@ -1,59 +1,75 @@
 import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router'
+
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubConer from '../src/components/GitHubConer';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer'
 
 
-// const BackgroundImage = styled.div `
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position:center;
-// `;
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-@media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+
 
 
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState("");
+
   return (
 
-  <QuizBackground backgroundImage={db.bg} >
+    <QuizBackground backgroundImage={db.bg}>
+
+      <Head>
+        <title>MovieQuiz</title>
+      </Head>
+
       <QuizContainer>
-        
         <Widget>
           <Widget.Header>
-            <h1>Descubra o seu conhecimento sobre Filmes</h1> 
+            <h1>Descubra o seu conhecimento sobre Filmes</h1>
           </Widget.Header>
 
           <Widget.Content>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`)
+              console.log("faznedo uma submissão por meio do react");
+            }}>
 
-            <p>Curiosidades, atores, uniformes e muito mais!</p>  
-          
+
+              <Input
+                name="nomeDoUsuario"
+                placeholder="Nome"
+                onChange={infosDoEvento => { setName(infosDoEvento.target.value); }}
+                value={name}
+              />
+
+
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
-        </Widget>  
+        </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1> 
+            <h1>Quizes da Galera</h1>
 
             <p>descubrem outros quizes</p>
-          </Widget.Content> 
-        </Widget>  
+          </Widget.Content>
+        </Widget>
 
-        <Footer/>
+        <Footer />
       </QuizContainer>
-    <GitHubConer projectUrl="https://github.com/PTomilhero27"/>  
-  </QuizBackground>
+      <GitHubConer projectUrl="https://github.com/PTomilhero27" />
+    </QuizBackground>
 
-)}
+  );
+}

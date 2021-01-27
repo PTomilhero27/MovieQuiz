@@ -4,15 +4,16 @@
     "description": "Teste os seus conhecimentos sobre filmes",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://64.media.tumblr.com/860e125f00eb64dbcd362205e55b432e/tumblr_mghrkbRx961qm7vyao1_1280.gifv",
+        "title": "Qual é o nome do primeiro feitiço que a Hermione usa ?",
+        "description": "O classico Harry Potter",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Alorromora",
+          "Óculos repare",
+          "Vingard Leviossa",
+          "Luminos Totales",
+          "Nenhum desses"
         ]
       },
       {
@@ -33,7 +34,7 @@
       "colors": {
         "primary": "#B3B3B3",
         "secondary": "#1B1A16",
-        "mainBg": "#D39B06",
+        "mainBg": "#2f2e2d",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
         "success": "#4CAF50"
