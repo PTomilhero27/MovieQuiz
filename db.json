@@ -7,7 +7,7 @@
         "image": "https://64.media.tumblr.com/860e125f00eb64dbcd362205e55b432e/tumblr_mghrkbRx961qm7vyao1_1280.gifv",
         "title": "Qual é o nome do primeiro feitiço que a Hermione usa ?",
         "description": "O classico Harry Potter",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
           "Alorromora",
           "Óculos repare",
@@ -17,15 +17,60 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media1.giphy.com/media/aqMY57vLdkghi/giphy.gif?cid=ecf05e47luh0nrbg9rbhn2ehilsy40um6h944cpf5o03dfon&rid=giphy.gif",
+        "title": "Qual é a terceira joia do infinito a ser pega pelo Thanos ?",
+        "description": "Complicou",
+        "answer": 4,
+        "alternatives": [
+           "Joia da Alma",
+           "Joia do Tempo",
+           "Joia da Mente",
+           "Joia do Espaço",
+           "Joia da Realidade"
+        ]
+      },
+
+      {
+        "image": "https://media1.giphy.com/media/s8lohqu0U5ZWE/giphy.gif?cid=ecf05e47hyk1r8llujpady5k3ph9pibfmyh3gy1sh60b6aht&rid=giphy.gif",
+        "title": "Dominic descobre que tem um filho com Elena. Como Elena chama o menino?",
+        "description": "Você é rapido o suficiente?",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Marcos",
+           "Brian",
+           "Felipe",
+           "Marcio"
+        ]
+      },
+
+      {
+        "image": "https://media0.giphy.com/media/lTOMryT3y3f1u/giphy.gif?cid=ecf05e47xl6bjybyltx25g0zpmza3zzs8zu2i8i03tkkenhc&rid=giphy.gif",
+        "title": "Qual o nome do homem que faz Shrek assinar o contrato?",
+        "description": "'Eu acho que sou um burro!'",
+        "answer": 0,
+        "alternatives": [
+           "Rumpelstiltskin",
+           "Arthur",
+           "Oscar",
+           "Skylder"
+        ]
+      },
+
+      {
+        "image": "https://media1.giphy.com/media/5xtDarDazM7NnYvWIyQ/giphy.gif?cid=ecf05e4783c079e4212da134a8546064bf469e37a841488b&rid=giphy.gif",
+        "title": "Quantos anos Davey Jones permitiu que Jack Sparrow fosse capitão do Pérola Negra?",
+        "description": "Quem foi que inventou a droga do Parolar ???",
+        "answer": 5,
+        "alternatives": [
+           "11 Anos",
+           "15 Anos",
+           "100 Anos",
+           "20 Anos",
+           "10 Anos",
+           "13 Anos"
         ]
       }
+
     ],
     "external": [
       ""
