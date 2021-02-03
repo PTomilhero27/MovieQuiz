@@ -1,12 +1,12 @@
 import React from 'react';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import Button from '../src/components/Button';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizLogo from '../src/components/QuizLogo';
-import AlternativesForm from '../src/components/AlternativesForm';
+import Widget from '../../Widget';
+import QuizBackground from '../../QuizBackground';
+import Button from '../../Button';
+import QuizContainer from '../../QuizContainer';
+import QuizLogo from '../../QuizLogo';
+import AlternativesForm from '../../AlternativesForm';
+import BackLinkArrow from '../../LinkVoltar';
 
 
 
@@ -85,7 +85,7 @@ function QuestionWidget({
     return (
         <Widget>
             <Widget.Header>
-                {/* <backLinkArrow href="/" /> */}
+                <BackLinkArrow href="/" /> 
                 <h3>
                     {`pergunta ${questionIndex + 1} de ${totalQuestions}`}
                 </h3>
@@ -172,14 +172,15 @@ const screenStates = {
 };
 
 
-function QuizPage() {
+function QuizScreen({ externalQuestions, externalBg }) {
 
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
     const [results, setResults] = React.useState([]);
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const questionIndex = currentQuestion;
-    const totalQuestions = db.questions.length;
-    const question = db.questions[questionIndex];
+    const totalQuestions = externalQuestions.length;
+    const question = externalQuestions[questionIndex];
+    const bg = externalBg;
     
 
     function addResult(result) {
@@ -210,11 +211,12 @@ function QuizPage() {
     }
 
     return (
-        <QuizBackground backgroundImage={db.bg}>
+        <QuizBackground backgroundImage={bg}>
             <QuizContainer>
                 <QuizLogo />
                 {screenState === screenStates.QUIZ && (
                     <QuestionWidget
+
                         question={question}
                         questionIndex={questionIndex}
                         totalQuestions={totalQuestions}
@@ -233,4 +235,4 @@ function QuizPage() {
 }
 
 
-export default QuizPage; 
+export default QuizScreen; 
