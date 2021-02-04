@@ -34,9 +34,7 @@ export default function App({ Component, pageProps }) {
       <Head>
 
         <title>TomiQuiz</title>
-        <meta name="title" content="TomiQuiz" />
-        <meta name="description" content="Meu primeiro site publicado oficialmente, nada menos que um jogo de perguntas e respostas, vulgo quiz!" />
-
+        
 
       </Head>
 
