@@ -30,3 +30,8 @@ const QuizLogo = styled(Logo)`
 `;
 
 export default QuizLogo;
+
+
+
+
+
