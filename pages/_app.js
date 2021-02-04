@@ -2,6 +2,8 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
 import Head from 'next/head';
 
+
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -31,26 +33,24 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
 
-
-        <title>TOMIQUIZ</title>
-        <meta name="title" content="TOMIQUIZ" />
-        <meta name="description" content="Jogue o melhor quiz sobre filmes, e o mais dificil também, quão atualizações semanais, sempre terá novos desafios " />
+        <title>TomiQuiz</title>
+        <meta name="title" content="TomiQuiz" />
+        <meta name="description" content="Meu primeiro site publicado oficialmente, nada menos que um jogo de perguntas e respostas, vulgo quiz!" />
 
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://metatags.io/" />
-        <meta property="og:title" content="TOMIQUIZ" />
-        <meta property="og:description" content="Jogue o melhor quiz sobre filmes, e o mais dificil também, quão atualizações semanais, sempre terá novos desafios " />
+        <meta property="og:title" content="TomiQuiz" />
+        <meta property="og:description" content="Meu primeiro site publicado oficialmente, nada menos que um jogo de perguntas e respostas, vulgo quiz!" />
         <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://metatags.io/" />
-        <meta property="twitter:title" content="TOMIQUIZ" />
-        <meta property="twitter:description" content="Jogue o melhor quiz sobre filmes, e o mais dificil também, quão atualizações semanais, sempre terá novos desafios " />
+        <meta property="twitter:title" content="TomiQuiz" />
+        <meta property="twitter:description" content="Meu primeiro site publicado oficialmente, nada menos que um jogo de perguntas e respostas, vulgo quiz!" />
         <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-        <title>MovieQuiz</title>
       </Head>
 
 
